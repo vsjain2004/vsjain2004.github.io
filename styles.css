@@ -1,0 +1,16 @@
+.body {
+    padding: 74px 10px 10px 10px;
+    margin: 0 0 0 0;
+}
+
+.pad {
+    padding: 0 10px 10px 10px;
+}
+
+.navbar {
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 9;
+}
