@@ -22,4 +22,8 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("contact").onclick = () => {
         window.location.assign("https://vsjain2004.github.io/contact.html")
     }
+
+    document.getElementById("resume").onclick = () => {
+        window.location.assign("https://vsjain2004.github.io/resume.html")
+    }
 })
