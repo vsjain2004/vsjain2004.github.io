@@ -4,6 +4,6 @@ document.addEventListener("DOMContentLoaded", () => {
     }
 
     document.getElementById("proj").onclick = () => {
-        window.location.assign("https://vsjain2004.github.io/project.html")
+        window.location.assign("https://vsjain2004.github.io/projects.html")
     }
 })
