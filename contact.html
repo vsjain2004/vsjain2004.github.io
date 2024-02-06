@@ -36,7 +36,19 @@
             </div>
         </nav>
 
-        <div class="body">
+        <h1 style="text-align: center;">Contact Form</h1>
+
+        <div id="sname" class="pad" style="display:block;padding-top:10px">
+            <div id="ner" style="margin-bottom:10px"></div>
+            <form id="sbname" action="https://formspree.io/f/meqyarkb" method="POST">
+                <div class="form-group m">
+                <input class="form-control" type="text" name="name" id="name" placeholder="First Name" required /><p></p>
+                <input class="form-control" type="text" name="lname" id="lname" placeholder="Last Name" required /><p></p>
+                <input class="form-control" type="email" name="email" placeholder="Email" required /><p></p>
+                <textarea class="form-control" name="message" placeholder="Your Message" required></textarea><p></p>
+                </div>
+                <button class="btn btn-primary" id="sename">Send</button>
+            </form>
         </div>
     </body>
 </html>
