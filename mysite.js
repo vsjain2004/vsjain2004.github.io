@@ -27,23 +27,23 @@ document.addEventListener("DOMContentLoaded", () => {
         window.location.assign("https://vsjain2004.github.io/resume.html")
     }
 
-    if(window.location.href.includes("index")){
-        if(window.innerHeight < window.innerWidth){
-            document.getElementById("self").height = Math.floor(window.innerHeight*0.4);
-        } else {
-            document.getElementById("self").height = Math.floor(window.innerWidth*0.4);
-        }
-    }   
+    // if(window.location.href.includes("index")){
+    //     if(window.innerHeight < window.innerWidth){
+    //         document.getElementById("self").height = Math.floor(window.innerHeight*0.4);
+    //     } else {
+    //         document.getElementById("self").height = Math.floor(window.innerWidth*0.4);
+    //     }
+    // }   
 
-    window.onresize = () => {
-        if(window.location.href.includes("index")){
-            if(window.innerHeight < window.innerWidth){
-                document.getElementById("self").height = Math.floor(window.innerHeight*0.4);
-            } else {
-                document.getElementById("self").height = Math.floor(window.innerWidth*0.4);
-            }
-        }   
-    }
+    // window.onresize = () => {
+    //     if(window.location.href.includes("index")){
+    //         if(window.innerHeight < window.innerWidth){
+    //             document.getElementById("self").height = Math.floor(window.innerHeight*0.4);
+    //         } else {
+    //             document.getElementById("self").height = Math.floor(window.innerWidth*0.4);
+    //         }
+    //     }   
+    // }
 
     if(window.location.href.includes("projects")){
         document.getElementById("One").click();
