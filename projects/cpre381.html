@@ -1,70 +1,83 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Varun Jain</title>
-        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
-        <link href="../styles.css" rel="stylesheet">
-        <script src="../mysite.js"></script>
-    </head>
-    <body>
-        <nav class="navbar navbar-expand-md navbar-light" style="margin-bottom : 10px; background-color : #BBBBBB">
-            <div class="container">
-                <a class="navbar-brand" style="color:black;font-size:20px;margin-left: 10px" href="/" id="about">About Me</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#na  vbarNav"  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px;font-weight: bold;" href="../projects.html" id="proj">Projects</a>
-                    </li>
-                    <!-- <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="../experience.html" id="exp">Experience</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="../achievements.html" id="achieve">Achievements</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="../extracurriculars.html" id="extra">Extra-Curriculars</a>
-                    </li> -->
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="../resume.html" id="resume">Resume</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="../contact.html" id="contact">Contact Me</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="../reflections.html" id="essay">Reflections</a>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processor Design for CprE 381 | Varun Jain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="../mysite.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" id="about" style="color:black; font-size:20px;">Varun Jain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Me</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="reflectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reflections
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="reflectionsDropdown">
+                            <li><a class="dropdown-item" href="../media/Ethics Essay.pdf" target="_blank">Ethics Essay</a></li>
+                            <li><a class="dropdown-item" href="../media/Cumulative Reflection - Varun Jain.pdf" target="_blank">Cumulative Reflection</a></li>
+                            <!-- <li><a class="dropdown-item" href="../path/to/reflection3.pdf" target="_blank">Reflection 3</a></li> -->
+                        </ul>
                     </li>
                 </ul>
-                </div>
-            </div>
-        </nav>
-        <div style="margin-left: 10px; margin-right: 10px; overflow-x: hidden;">
-            <h1 style="text-align: center;">Processor Design for CprE 381 - Fall 2023</h1>
-            CprE 381 is a course on Computer Organization and Assembly level Programming focused on the basics of processor design and MIPS architecture. There were two major projects in the course during which three different processor designs were developed to fit a subset of the MIPS architecture. The projects are usually done in a team of 3 people, but I did all of these projects by myself. All designs were programmed in VHDL and were tested in Modelsim. The designs then went through a timing analysis in Quartus Prime based on a selected FPGA hardware. All of the processors were designed according to the Harvard Architecture, as it is the most common design for the lowest level of a processor.
-            <br>
-            <br>
-            <div>
-                <div class="row">
-                    <div class="col-7" style="text-align: justify;">
-                        The first project encompassed the creation of a Single-Cycle Processor. I started out with a rough schematic for the required instructions, and wrote down all control signal accordingly. Then, the components were created, one at a time. These were assembled together alongside a file acting as the main memory of the processor. This gave birth to the final schematic, which can be seen in the figure on the right. The code for the project is also available in my GitHub <a href="https://github.com/vsjain2004/CPRE381-Proj1">here</a>.
-
-                        <br><br>
-
-                        Using the Single-Cycle Processor as the base, I started on the second project. The first part was to create a 5-stage pipelined processor that was software scheduled. This meant that the processor would not be checking for any collisions between two instructions and that it would depend on the provided assembly program to have enough no-ops (pauses in execution) to bypass hazards. One of the biggest changes done was adding registers to save information from one stage to another. Instead of making 4 separate registers, I combined them into one component, which proved to be equivalent upon analysis. The code for ths processor can be found <a href="https://github.com/vsjain2004/CPRE381-Proj2-1">here</a>.
-
-                        <br><br>
-
-                        For the second part of Project 2, I used the processor from part 1 of this project and added hazard checking functionality. This meant that more data will have to be saved, and a new component would have to be created to check for any clashes. This was done successfully with the help of process statements. The code for this is available <a href="https://github.com/vsjain2004/CPRE381-Proj2-2">here</a>.
-                        <br><br>
-                        Through the projects, I was able to gain experience with designing processors. I was also able to learn a lot about VHDL and timing analysis. This experience will help me a lot in the future, as I plan to work in processor design, catered towards machine learning.
-                    </div>
-                    <div class="col-5"><img src="../media/cpre381-1.jpg" style="width: 40vw;"></div>
-                </div>
             </div>
         </div>
-    </body>
+    </nav>
+
+    <!-- Project Content -->
+    <div class="container mb-5">
+        <!-- Project Header -->
+        <div class="text-center mb-4">
+            <h1 class="display-5">Processor Design for CprE 381 - Fall 2023</h1>
+            <p class="text-muted">Course Project | Computer Organization and Assembly</p>
+        </div>
+
+        <!-- Project Overview -->
+        <p class="lead">CprE 381 is a course on Computer Organization and Assembly level programming, focusing on processor design and the MIPS architecture. During this course, I developed three processor designs to fit a subset of the MIPS architecture, all programmed in VHDL and tested in ModelSim. Timing analysis was performed in Quartus Prime, using a Harvard Architecture approach.</p>
+
+        <!-- Project Details Section -->
+        <div class="row mt-4">
+            <!-- Description Column -->
+            <div class="col-md-7">
+                <h3>Project Details</h3>
+
+                <p><strong>Project 1:</strong> Single-Cycle Processor - I created a schematic, defined control signals, and assembled components, culminating in the final schematic design shown in the image. View the code on <a href="https://github.com/vsjain2004/CPRE381-Proj1" target="_blank">GitHub</a>.</p>
+
+                <p><strong>Project 2, Part 1:</strong> 5-Stage Pipelined Processor - Using the single-cycle processor as a base, I developed a software-scheduled, pipelined processor that relied on assembly program no-ops to bypass hazards. View the code on <a href="https://github.com/vsjain2004/CPRE381-Proj2-1" target="_blank">GitHub</a>.</p>
+
+                <p><strong>Project 2, Part 2:</strong> Hazard-Checking Processor - I implemented a hazard detection unit to address data clashes, adding new components and process statements to manage hazards. View the code on <a href="https://github.com/vsjain2004/CPRE381-Proj2-2" target="_blank">GitHub</a>.</p>
+
+                <p>Through these projects, I gained hands-on experience with processor design, VHDL programming, and timing analysis, which has furthered my interest in processor design, particularly for machine learning applications.</p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-5 text-center">
+                <img src="../media/cpre381-1.jpg" class="img-fluid" alt="Processor Design Schematic">
+                <small class="d-block text-muted mt-2">Schematic of the Single-Cycle Processor</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Varun Jain</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
 </html>

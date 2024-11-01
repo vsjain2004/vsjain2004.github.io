@@ -2,121 +2,94 @@
 <html lang="en">
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Varun Jain</title>
+        <title>Varun Jain: Projects</title>
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
         <link href="styles.css" rel="stylesheet">
-        <script src="mysite.js"></script>
     </head>
     <body>
-        <nav class="navbar navbar-expand-md navbar-light" style="margin-bottom : 10px; background-color : #BBBBBB">
+        <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
             <div class="container">
-                <a class="navbar-brand" style="color:black;font-size:20px;margin-left: 10px" href="/" id="about">About Me</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#na  vbarNav"  aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <a class="navbar-brand fw-bold" href="/">Varun Jain</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px;font-weight: bold;" href="" id="proj">Projects</a>
-                    </li>
-                    <!-- <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="experience.html" id="exp">Experience</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="achievements.html" id="achieve">Achievements</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="extracurriculars.html" id="extra">Extra-Curriculars</a>
-                    </li> -->
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="resume.html" id="resume">Resume</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="contact.html" id="contact">Contact Me</a>
-                    </li>
-                    <li class="nav-items">
-                        <a class="nav-link" style="color:black;font-size:18px" href="essay.html" id="essay">Ethics Essay</a>
-                    </li>
-                </ul>
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="/">About Me</a></li>
+                        <li class="nav-item"><a class="nav-link active fw-bold" href="projects.html">Projects</a></li>
+                        <li class="nav-item"><a class="nav-link" href="experience.html">Experience</a></li>
+                        <li class="nav-item"><a class="nav-link" href="resume.html">Resume</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact Me</a></li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" id="reflectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Reflections
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="reflectionsDropdown">
+                                <li><a class="dropdown-item" href="media/Ethics Essay.pdf" target="_blank">Ethics Essay</a></li>
+                                <li><a class="dropdown-item" href="media/Cumulative Reflection - Varun Jain.pdf" target="_blank">Cumulative Reflection</a></li>
+                                <!-- <li><a class="dropdown-item" href="../path/to/reflection3.pdf" target="_blank">Reflection 3</a></li> -->
+                            </ul>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </nav>
 
-        <h1 style="text-align: center;">Projects</h1>
-        <div style="margin-left: 10px; margin-right: 10px;height: 78vh; overflow: hidden;">
+        <main class="container">
+            <h1 class="text-center mb-4">Projects</h1>
             <div class="row">
-                <div class="col-10 overflow-y-scroll" style="height: 78vh;">
-                    <h2 id="CompArch">Computer Architecture</h2>
-                    <div class="card card-body" style="border: none;">
-                        <div class="row" style="background-color: #DDDDDD;">
-                            <h3 id="p381">Processor Design for CprE 381 - Fall 2023</h3>
-                            <div class="col-9" style="text-align: justify;">CprE 381 is a course on Computer Organization and Assembly level Programming focused on the basics of processor design and MIPS architecture. There were two major projects in the course during which three different processor designs were developed to fit a subset of the MIPS architecture. The projects are usually done in a team of 3 people, but I did all of these projects by myself. All designs were programmed in VHDL and were tested in Modelsim. The designs then went through a timing analysis in Quartus Prime based on a selected FPGA hardware. <a href="projects/cpre381.html">Learn more</a></div>
-                            <div class="col-3"></div>
+                <div class="col-md-8 overflow-auto" style="max-height: 75vh;">
+                    <!-- Computer Architecture Projects Section -->
+                    <section id="CompArch" class="mb-5">
+                        <h2>Computer Architecture</h2>
+                        <div class="card my-3 p-3">
+                            <h3>Processor Design for CprE 381 - Fall 2023</h3>
+                            <p class="text-justify">This course focused on Computer Organization and MIPS architecture processor design. I independently completed three processor designs in VHDL, tested in Modelsim, with timing analysis in Quartus Prime. <a href="projects/cpre381.html">Learn more</a></p>
                         </div>
-                        <div class="row" style="background-color: #EEEEEE;">
-                            <h3 style="text-align: right;" id="p281">Processor Design for CprE 281 - Fall 2022</h3>
-                            <div class="col-3"></div>
-                            <div class="col-9" style="text-align: justify;">CprE 281 is a course focused on the basics of digital logic design. For the Final Project, we are required to design a digital system for any purpose we want. This design is then run on Altera's DE2 FPGA Board. For my final project I designed a small-scale Single-Cycle Processor. <a href="projects/cpre281.html">Learn more</a></div>
+                        <div class="card my-3 p-3">
+                            <h3>Processor Design for CprE 281 - Fall 2022</h3>
+                            <p class="text-justify">Focused on digital logic basics, I designed a Single-Cycle Processor for an Altera DE2 FPGA board as my final project. <a href="projects/cpre281.html">Learn more</a></p>
                         </div>
-                    </div>
-                    <h2 id="Robotics">Robotics</h2>
-                    <div class="card card-body" style="border: none;">
-                        <div class="row" style="background-color: #DDDDDD;">
-                            <h3 id="p575">Optical Recognition in PCBs for CprE 575 - Spring 2023</h3>
-                            <div class="col-9" style="text-align: justify;">CprE 575 is a course focused on learning the basics of Computational Perception. The course starts with Image Processing and is followed by working on Videos. Then we deal with Audio analysis. For the Final project of the course, students work in groups to create something that incorporates at least one major concept from the course. <a href="projects/cpre575.html">Learn more</a></div>
-                            <div class="col-3"></div>
+                    </section>
+
+                    <!-- Robotics Projects Section -->
+                    <section id="Robotics" class="mb-5">
+                        <h2>Robotics</h2>
+                        <div class="card my-3 p-3">
+                            <h3>Optical Recognition in PCBs for CprE 575 - Spring 2023</h3>
+                            <p class="text-justify">In this course, I applied Computational Perception techniques to develop a PCB Optical Recognition project. <a href="projects/cpre575.html">Learn more</a></p>
                         </div>
-                        <div class="row" style="background-color: #EEEEEE;">
-                            <h3 style="text-align: right;" id="p288">Embedded Sytems Project for CprE 288 - Spring 2023</h3>
-                            <div class="col-3"></div>
-                            <div class="col-9" style="text-align: justify;">CprE 288 is a course focused on the basics of Embedded Systems and Embedded Systems programming. It involves writing scripts in C to control a Roomba. The Roombas have been adapted with a baseboard that connect to a WiFi antenna and a Texas Instruments board. For the final project, groups of three to four people work to create a situation that can be simulated using Roomba and then program it to do so. <a href="projects/cpre288.html">Learn more</a></div>
+                        <div class="card my-3 p-3">
+                            <h3>Embedded Systems Project for CprE 288 - Spring 2023</h3>
+                            <p class="text-justify">Focused on embedded systems, I used C programming to simulate scenarios on a modified Roomba. <a href="projects/cpre288.html">Learn more</a></p>
                         </div>
-                    </div>
-                    <h2 id="Software">Software Design</h2>
-                    <div class="card card-body" style="border: none;">
-                        <div class="row" style="background-color: #DDDDDD;">
-                            <h3 id="p4912">Senior Design Project - Fall 2024 to Spring 2025</h3>
-                            <div class="col-9" style="text-align: justify;">The Senior Design Project is a two semester long project where students work in groups to work on a project proposed either by Companies or by the students. Students work with Faculty Advisors and Clients to design a solution based on the Clients' needs. The project is reviewed by a Faculty Panel at the end of the first semester and an Industry Panel as the end of the second semester. <a href="projects/sd.html">Learn more</a></div>
-                            <div class="col-3"></div>
+                    </section>
+
+                    <!-- Software Design Projects Section -->
+                    <section id="Software" class="mb-5">
+                        <h2>Software Design</h2>
+                        <div class="card my-3 p-3">
+                            <h3>Senior Design Project - Fall 2024 to Spring 2025</h3>
+                            <p class="text-justify">In this two-semester project, our team is building a course management website for Dr. Simanta Mitra’s ComS 309 class. The platform will streamline tasks like assignment management, student tracking, and resource organization, making course administration more efficient and user-friendly. <a href="projects/sd.html">Learn more</a></p>
                         </div>
-                        <div class="row" style="background-color: #EEEEEE;">
-                            <h3 style="text-align: right;" id="p309">ComS 309: CyHawk Clash (Android App) - Fall 2023</h3>
-                            <div class="col-3"></div>
-                            <div class="col-9" style="text-align: justify;">ComS 309 is a course focused on learning about Android App Development using Java. Over the course of the semester, groups of 4 people develop an Android app. For the Forntend we used Android Studio, for the Backend we used SpringBoot and for our Database we used MySQL. Aside from basic Frontend and Backend code, we used advanced tools like Websockets as well as third-party APIs. <a href="projects/coms309.html">Learn more</a></div>
+                        <div class="card my-3 p-3">
+                            <h3>ComS 309: CyHawk Clash (Android App) - Fall 2023</h3>
+                            <p class="text-justify">Developed in a team, this Android app project utilized Android Studio, SpringBoot, MySQL, Websockets, and third-party APIs. <a href="projects/coms309.html">Learn more</a></p>
                         </div>
-                    </div>
-                    <!-- <br> -->
-                    <!-- <a class="btn btn-link" data-bs-toggle="collapse" href="#collapseTwo" role="button" aria-expanded="false" aria-controls="collapseTwo" id="Two"><h2>High School</h2></a>
-                    <div class="card card-body" id="collapseTwo" style="border: none;">
-                        a
-                    </div>
-                    <br>
-                    <a class="btn btn-link" data-bs-toggle="collapse" href="#collapseThree" role="button" aria-expanded="false" aria-controls="collapseThree" id="Three"><h2>Others</h2></a>
-                    <div class="card card-body" id="collapseThree" style="border: none;">
-                        c
-                    </div> -->
+                    </section>
                 </div>
-                <div class="col-2" style="position: sticky; overflow-y: auto; height: 78vh;">
-                    <ul class="list-group list-group-flush">
-                        <a class="list-group-item list-group-item-action" href="#CompArch">Computer Architecture</a>
-                        <ul class="list-group-flush">
-                            <a class="list-group-item list-group-item-action" href="#p381">CprE 381</a>
-                            <a class="list-group-item list-group-item-action" href="#p281">CprE 281</a>
-                        </ul>
-                        <a class="list-group-item list-group-item-action" href="#Robotics">Robotics</a>
-                        <ul class="list-group-flush">
-                            <a class="list-group-item list-group-item-action" href="#p575">CprE 575</a>
-                            <a class="list-group-item list-group-item-action" href="#p288">CprE 288</a>
-                        </ul>
-                        <a class="list-group-item list-group-item-action" href="#Software">Software Design</a>
-                        <ul class="list-group-flush">
-                            <a class="list-group-item list-group-item-action" href="#p4912">Senior Design</a>
-                            <a class="list-group-item list-group-item-action" href="#p309">ComS 309</a>
-                        </ul>
-                    </ul>
-                </div>
+
+                <!-- Sidebar Section -->
+                <aside class="col-md-4">
+                    <div class="list-group sticky-top">
+                        <a href="#CompArch" class="list-group-item list-group-item-action">Computer Architecture</a>
+                        <a href="#Robotics" class="list-group-item list-group-item-action">Robotics</a>
+                        <a href="#Software" class="list-group-item list-group-item-action">Software Design</a>
+                    </div>
+                </aside>
             </div>
-        </div>
+        </main>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     </body>
 </html>
