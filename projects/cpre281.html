@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processor Design for CprE 281 | Varun Jain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="../mysite.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" id="about" style="color:black; font-size:20px;">Varun Jain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Me</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="reflectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reflections
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="reflectionsDropdown">
+                            <li><a class="dropdown-item" href="../media/Ethics Essay.pdf" target="_blank">Ethics Essay</a></li>
+                            <li><a class="dropdown-item" href="../media/Cumulative Reflection - Varun Jain.pdf" target="_blank">Cumulative Reflection</a></li>
+                            <!-- <li><a class="dropdown-item" href="../path/to/reflection3.pdf" target="_blank">Reflection 3</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <div class="container mb-5">
+        <!-- Project Header -->
+        <div class="text-center mb-4">
+            <h1 class="display-5">Processor Design for CprE 281 - Fall 2022</h1>
+            <p class="text-muted">Course Project | Digital Logic Design</p>
+        </div>
+
+        <!-- Project Overview -->
+        <p class="lead">CprE 281 is a course on Digital Logic Design, focusing on digital logic bases. For this course's project, I developed a processor design for my own ISA, all programmed in Verilog or made using Block Diagram Files (BDF) and tested in ModelSim and on the Altera DE2 FPGA. The processor uses the Harvard Architecture approach.</p>
+
+        <!-- Project Details Section -->
+        <div class="row mt-4">
+            <!-- Description Column -->
+            <div class="col-md-7">
+                <h3>Project Details</h3>
+
+                <p>For this project in CprE 281, I developed an 8-bit single-cycle processor with a 16-bit instruction set, following a Harvard architecture. The processor was implemented using Verilog and Block Diagram Files (BDFs) in Intel Quartus Prime and tested using ModelSim and the Altera DE2 FPGA. The video on the right demonstrates a control system program running on the FPGA board. While the codebase is not currently available on GitHub, a detailed project report is <a href="../media/Varun Jain Final Project Lab Report.pdf", target="_blank">accessible</a>.</p>
+                
+                <h3>Skills and Knowledge Gained</h3>
+                <p>This project provided a comprehensive introduction to processor design, specifically focusing on control logic and instruction execution. Working with Verilog enhanced my digital design skills, allowing me to translate abstract logic into functional hardware. I also gained experience with FPGA programming and the hardware/software co-design process, solidifying my understanding of the Harvard architecture and single-cycle processing. Through testing on the ModelSim and the FPGA, I learned essential troubleshooting techniques for timing and resource optimization, which are invaluable for future hardware development.</p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-5 text-center">
+                <video width="420" height="315" src="../media/cs2.mp4" controls></video>
+                <small class="d-block text-muted mt-2">Control System Program on Processor</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Varun Jain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
