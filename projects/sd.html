@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Senior Design Project | Varun Jain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="../mysite.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" id="about" style="color:black; font-size:20px;">Varun Jain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Me</a></li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="reflectionsDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Reflections
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="reflectionsDropdown">
+                            <li><a class="dropdown-item" href="../media/Ethics Essay.pdf" target="_blank">Ethics Essay</a></li>
+                            <li><a class="dropdown-item" href="../media/Cumulative Reflection - Varun Jain.pdf" target="_blank">Cumulative Reflection</a></li>
+                            <!-- <li><a class="dropdown-item" href="../path/to/reflection3.pdf" target="_blank">Reflection 3</a></li> -->
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <div class="container mb-5">
+        <!-- Project Header -->
+        <div class="text-center mb-4">
+            <h1 class="display-5">Senior Design Project - Fall 2024 to Spring 2025</h1>
+            <p class="text-muted">Two-Semester Capstone Project for Seniors</p>
+        </div>
+
+        <!-- Project Overview -->
+        <p class="lead">The Senior Design Project is an intensive, year-long capstone focused on delivering an industry-level solution developed from a project proposed by either university faculty or an industry partner. Our team is tasked with building a comprehensive course management website for Dr. Simanta Mitra at Iowa State University, tailored to meet the specific needs of his ComS 309 course on Software Development Practices. This project will be evaluated at the end of the first semester by a faculty panel and by an industry panel in the spring. Further project resources and documentation can be found on our <a href="https://sdmay25-14.sd.ece.iastate.edu/" target="_blank">Senior Design Project website</a>.</p>
+
+        <!-- Project Details Section -->
+        <div class="row mt-4">
+            <!-- Description Column -->
+            <div class="col-md-7">
+                <h3>Project Overview</h3>
+                    
+                <p>The ComS 309 course centers on semester-long team projects, traditionally focused on creating Android applications with Java and SpringBoot. In contrast, our Senior Design Project seeks to unify multiple course resources into a single web-based Dashboard. Our goal is to integrate various platforms, including Canvas, CATME, Google Forms, and GitLab, allowing Dr. Mitra and his teaching assistants to manage these resources in one location.</p>
+
+                <h3>Project Contributions and Design Focus</h3>
+
+                <p>As the Backend Lead, I focus on database design and the development of backend features to support frontend functionality and align with Dr. Mitra’s requirements. Key aspects of the backend include scalability to accommodate hundreds of concurrent users and a CSV analysis module to parse multiple data formats seamlessly. Security is our highest priority; since the platform will handle sensitive student information, we adhere strictly to FERPA standards for confidentiality. For our second semester, we anticipate using AWS infrastructure, including AWS RDS, to deploy the production server and ensure high availability.</p>
+
+                <h3>Skills and Knowledge Gained</h3>
+
+                <p>This project is providing me hands-on experience in scalable backend development, secure database management, and integration of multiple APIs within a unified platform. Additionally, working with AWS and AWS RDS will deepen my understanding of cloud deployment practices and provide insights into ensuring data security at scale in compliance with regulatory standards.</p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-5 text-center">
+                <img src="../media/ERmin.png" class="img-fluid" alt="ER Diagram">
+                <small class="d-block text-muted mt-2">ER Diagram</small>
+
+                <img src="../media/mockup.webp" class="img-fluid" alt="Dashboard Mockup">
+                <small class="d-block text-muted mt-2">Dashboard Mockup</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+        <div class="container text-center">
+            <p>&copy; 2024 Varun Jain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
