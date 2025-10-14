@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processor Design | Varun Jain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="../mysite.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" id="about" style="color:black; font-size:20px;">Varun Jain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume/CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <div class="container mb-5">
+        <!-- Project Header -->
+        <div class="text-center mb-4">
+            <h1 class="display-5">Processor Design - Jan 2023 to Present</h1>
+            <p class="text-muted">Extension to <a href="cpre281.html">CprE 2810 Processor Design</a></p>
+        </div>
+
+        <!-- Project Overview -->
+        <p class="lead"> Building upon the initial CPU built for the course project of CprE 2810, this project aims to enhance functionality via extension of its custom 8-bit minimal CISC ISA and later architectural enhancements. A version log starting from version 2 is available below.</p>
+
+        <!-- Project Details Section -->
+        <div class="row mt-4">
+            <!-- Description Column -->
+            <div class="col-md">
+                <h3>CPU v3</h3>
+                <ul>
+                    <li>Change and compress instruction opcodes to add new instructions</li>
+                    <li>Add ability to add, subtract or swap two registers</li>
+                    <li>Add ability to Swap memory address with a register</li>
+                    <li>Add Logical, Arithmetic, and Circular Shift instructions</li>
+                    <li>Add Register Decrement instruction</li>
+                    <li><a href="https://github.com/vsjain2004/SC8bCPU/tree/main">GitHub Code</a></li>
+                </ul>
+                
+                <h3>CPU v2</h3>
+                <ul>
+                    <li>Add Indirect and Indexed Memory Addressing Modes</li>
+                    <li>Add 'Jump if Greater Than' and 'Jump if Greater than or Equal' instructions</li>
+                    <li>Convert the Control system from a single unit to a Opcode Decoder + Control unit structure</li>
+                    <li><a href="https://github.com/vsjain2004/SC8bCPU/tree/v2">GitHub Code</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Varun Jain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
