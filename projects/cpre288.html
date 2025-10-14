@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Embedded Systems Project for CprE 2880 | Varun Jain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="../mysite.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" id="about" style="color:black; font-size:20px;">Varun Jain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume/CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <div class="container mb-5">
+        <!-- Project Header -->
+        <div class="text-center mb-4">
+            <h1 class="display-5">Embedded Systems Project for CprE 2880 - Spring 2023</h1>
+            <p class="text-muted">Course Project | Embedded Systems I</p>
+        </div>
+
+        <!-- Project Overview -->
+        <p class="lead">
+            CprE 2880 introduces the principles of embedded systems design and hardware-software interaction.
+            For the semester project, my team programmed a TM4C123 microcontroller mounted on a Roomba to autonomously navigate a maze using an array of onboard sensors. 
+            A MATLAB-based GUI allowed manual control and real-time visualization of the Roomba's environment.
+        </p>
+
+        <!-- Project Details Section -->
+        <div class="row mt-4">
+            <!-- Description Column -->
+            <div class="col-md-7">
+                <h3>Project Details</h3>
+                <p>
+                    For this project, my team and I programmed a TM4C123GH6PM microcontroller to solve a maze using multiple onboard and external sensors. 
+                    The Roomba's front-mounted pressure sensors and a 180° rotating infrared (IR) sensor were used to detect obstacles, while a bottom-facing IR sensor prevented the robot from falling into pits. 
+                    Communication between the microcontroller and the Roomba occurred via a UART interface, connected over Wi-Fi to our host machine. 
+                    We developed a MATLAB GUI to visualize the maze, display sensor data, and control the Roomba's movement. 
+                    As a fun extension, we also programmed the Roomba to play the Imperial March. 
+                    The codebase is currently unavailable.
+                </p>
+
+                <h3>Skills and Knowledge Gained</h3>
+                <p>
+                    This project provided hands-on experience with embedded systems programming and real-time sensor integration. 
+                    I gained practical skills in configuring ADC, GPIO, timers, and PWM modules on the TM4C123 microcontroller, as well as interpreting and calibrating sensor outputs for reliable navigation. 
+                    Additionally, I learned to design a responsive MATLAB GUI for human-machine interaction and developed an understanding of UART communication protocols and embedded control loops. 
+                    These experiences deepened my appreciation for low-level hardware control and system debugging in embedded environments.
+                </p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-5 text-center">
+                <img src="../media/CprE 288 5A Driagram.jpg" class="img-fluid" alt="Component Interaction Diagram"></img>
+                <small class="d-block text-muted mt-2">Component Interaction Diagram</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Varun Jain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
