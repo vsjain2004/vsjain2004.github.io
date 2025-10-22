@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Optical Recognition in PCBs for CprE 5750 | Varun Jain</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="../styles.css" rel="stylesheet">
+    <script src="../mysite.js"></script>
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light mb-4">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="/" id="about" style="color:black; font-size:20px;">Varun Jain</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../projects.html">Projects</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../experience.html">Experience</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../resume.html">Resume/CV</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../contact.html">Contact Me</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Project Content -->
+    <div class="container mb-5">
+        <!-- Project Header -->
+        <div class="text-center mb-4">
+            <h1 class="display-5">Optical Recognition in PCBs for CprE 5750 - Spring 2023</h1>
+            <p class="text-muted">Course Project | Computational Perception</p>
+        </div>
+
+        <!-- Project Overview -->
+        <p class="lead">
+            CprE 5750 focuses on image and signal processing techniques, covering topics such as filtering, segmentation, and feature extraction. 
+            For the course project, my team developed a program to reverse-engineer 1- and 2-layer Printed Circuit Boards (PCBs) into their corresponding schematics.
+        </p>
+
+        <!-- Project Details Section -->
+        <div class="row mt-4">
+            <!-- Description Column -->
+            <div class="col-md-7">
+                <h3>Project Details</h3>
+                <p>
+                    Our team designed a program that processes user-provided PCB images to automatically extract circuit connections and component information. 
+                    The workflow integrated a convolutional neural network (CNN), an OCR model, and several handcrafted image filters to identify traces, vias, and silkscreen labels. 
+                    My primary role was evaluating multiple OCR models and optimizing their use to accurately read PCB silkscreen text. 
+                    The project was presented as part of the course's final evaluation, and the report is available 
+                    <a href="../media/Team1_FinalProject_COMS575.pdf" target="_blank">here</a>.
+                </p>
+
+                <h3>Skills and Knowledge Gained</h3>
+                <p>
+                    This project provided hands-on experience in image preprocessing, OCR-based text extraction, and the integration of neural networks within a computer vision pipeline. 
+                    I also gained practical skills in combining deep learning with traditional image processing techniques to solve complex engineering problems, as well as in model evaluation and performance optimization for real-world datasets.
+                </p>
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-5 text-center">
+                <video width="420" height="315" src="../media/CprE_575_Final_Presentation.mp4" controls></video>
+                <small class="d-block text-muted mt-2">Final Project Presentation</small>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="py-3">
+        <div class="container text-center">
+            <p>&copy; 2025 Varun Jain. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
