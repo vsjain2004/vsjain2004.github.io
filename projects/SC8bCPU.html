@@ -41,7 +41,22 @@
         <!-- Project Details Section -->
         <div class="row mt-4">
             <!-- Description Column -->
-            <div class="col-md">
+            <div class="col-md-7">
+                <p class="text-muted">
+                    Note: Starting with v6, this page serves as a log for ISA evolution only. 
+                    Subsequent architectural development will focus on pipelined and out-of-order microarchitectures, documented separately. 
+                    The single-cycle implementation will not be extended beyond version 6.
+                </p>
+
+                <h3>CPU v5 (In Progress)</h3>
+                <ul>
+                    <li>Expanded the architecture to 32-bit instruction and data widths, significantly increasing computational capability and design scalability.</li>
+                    <li>Extended instruction and data memory address spaces, including corresponding updates to the program counter and memory addressing logic.</li>
+                    <li>Redesigned the instruction format to support a base 32-bit encoding with variable-length instructions and pseudoinstructions.</li>
+                    <li>Refactoring the ISA and datapath to better support pipelined execution and future architectural enhancements.</li>
+                    <li>Establishing a foundation for more advanced features, including improved instruction flexibility and expanded functionality.</li>
+                </ul>
+
                 <h3>CPU v4.5</h3>
                 <ul>
                     <li>Replaced Intel macro-functions with self-written modules to decouple the architecture from vendor-specific hardware primitives.</li>
@@ -77,6 +92,12 @@
                     <li><a href="https://github.com/vsjain2004/SC8bCPU/tree/v2" target="_blank">View GitHub Code</a></li>
                 </ul>
 
+            </div>
+
+            <!-- Image Column -->
+            <div class="col-md-5 text-center">
+                <img src="../media/CPU_default.svg" alt="CPU v5" class="img-fluid">
+                <small class="d-block text-muted mt-2">CPU v5 Top Level Schematic</small>
             </div>
         </div>
     </div>
