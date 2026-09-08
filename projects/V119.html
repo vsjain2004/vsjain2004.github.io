@@ -31,12 +31,12 @@
     <div class="container mb-5">
         <!-- Project Header -->
         <div class="text-center mb-4">
-            <h1 class="display-5">Processor Design - Jan 2023 to Present</h1>
+            <h1 class="display-5">V119 ISA & Architecture Design - Jan 2023 to Present</h1>
             <p class="text-muted">Extension of the <a href="cpre281.html">CprE 2810 Processor Design Project</a></p>
         </div>
 
         <!-- Project Overview -->
-        <p class="lead">Building upon the initial CPU developed for the CprE 2810 course project, this work enhances functionality through extensions to its custom 8-bit minimal CISC ISA and subsequent architectural improvements. A version log beginning with version 2 is provided below.</p>
+        <p class="lead">Building upon the initial CPU developed for the CprE 2810 course project, this work enhances functionality through extensions to its custom 8-bit minimal CISC ISA (V119) and subsequent architectural improvements. A version log beginning with version 2 is provided below.</p>
 
         <!-- Project Details Section -->
         <div class="row mt-4">
@@ -45,16 +45,17 @@
                 <p class="text-muted">
                     Note: Starting with v6, this page serves as a log for ISA evolution only. 
                     Subsequent architectural development will focus on pipelined and out-of-order microarchitectures, documented separately. 
-                    The single-cycle implementation will not be extended beyond version 6.
+                    The single-cycle implementation will not be extended beyond version 5.
                 </p>
 
-                <h3>CPU v5 (In Progress)</h3>
+                <h3>CPU v5</h3>
                 <ul>
                     <li>Expanded the architecture to 32-bit instruction and data widths, significantly increasing computational capability and design scalability.</li>
                     <li>Extended instruction and data memory address spaces, including corresponding updates to the program counter and memory addressing logic.</li>
                     <li>Redesigned the instruction format to support a base 32-bit encoding with variable-length instructions and pseudoinstructions.</li>
                     <li>Refactoring the ISA and datapath to better support pipelined execution and future architectural enhancements.</li>
-                    <li>Establishing a foundation for more advanced features, including improved instruction flexibility and expanded functionality.</li>
+                    <li>Established a foundation for more advanced features, including improved instruction flexibility and expanded functionality.</li>
+                    <li><a href="https://github.com/vsjain2004/V119/tree/CPUv5" target="_blank">View GitHub Code</a></li>
                 </ul>
 
                 <h3>CPU v4.5</h3>
@@ -63,7 +64,7 @@
                     <li>Transitioned from block diagram files to a fully Verilog-based implementation for improved portability and maintainability.</li>
                     <li>Developed test programs to validate instruction behavior and overall system functionality.</li>
                     <li>Authored documentation and a programming guide outlining the CPU's assembly syntax and usage.</li>
-                    <li><a href="https://github.com/vsjain2004/SC8bCPU/tree/85c98362866ea72a6f135e3807138f27d8882bf2" target="_blank">View GitHub Code</a></li>
+                    <li><a href="https://github.com/vsjain2004/V119/tree/CPUv4.5" target="_blank">View GitHub Code</a></li>
                 </ul>
                 
                 <h3>CPU v4</h3>
@@ -71,7 +72,7 @@
                     <li>Removed indirect memory addressing to simplify the memory access path.</li>
                     <li>Eliminated memory-to-register swap functionality.</li>
                     <li>Added support for register-to-register logical instructions.</li>
-                    <li><a href="https://github.com/vsjain2004/SC8bCPU/tree/ad347d68b6b7288f2d291f652e44ac7cfb465a96" target="_blank">View GitHub Code</a></li>
+                    <li><a href="https://github.com/vsjain2004/V119/tree/CPUv4" target="_blank">View GitHub Code</a></li>
                 </ul>
 
                 <h3>CPU v3</h3>
@@ -81,7 +82,7 @@
                     <li>Implemented memory-to-register swap functionality.</li>
                     <li>Introduced logical, arithmetic, and circular shift instructions.</li>
                     <li>Added a dedicated register decrement instruction.</li>
-                    <li><a href="https://github.com/vsjain2004/SC8bCPU/tree/85f67ca13d5a168a61988f90d2c3a3cadf9810a9" target="_blank">View GitHub Code</a></li>
+                    <li><a href="https://github.com/vsjain2004/V119/tree/CPUv3" target="_blank">View GitHub Code</a></li>
                 </ul>
 
                 <h3>CPU v2</h3>
@@ -89,7 +90,7 @@
                     <li>Implemented indirect and indexed memory addressing modes.</li>
                     <li>Added conditional branching instructions: <em>Jump if Greater Than</em> and <em>Jump if Greater Than or Equal</em>.</li>
                     <li>Refactored the control logic from a single control unit into an opcode decoder + control unit architecture.</li>
-                    <li><a href="https://github.com/vsjain2004/SC8bCPU/tree/v2" target="_blank">View GitHub Code</a></li>
+                    <li><a href="https://github.com/vsjain2004/V119/tree/v2" target="_blank">View GitHub Code</a></li>
                 </ul>
 
             </div>
@@ -105,7 +106,7 @@
     <!-- Footer -->
     <footer class="py-3">
         <div class="container text-center">
-            <p>&copy; 2025 Varun Jain. All rights reserved.</p>
+            <p>&copy; 2026 Varun Jain. All rights reserved.</p>
         </div>
     </footer>
 
